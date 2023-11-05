@@ -1,0 +1,33 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 44, in script
+    python:
+  File "game/script.rpy", line 45, in <module>
+    generate_world()
+  File "game/script.rpy", line 20, in generate_world
+    world = World()
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 44, in script
+    python:
+  File "/Users/andrewwu/Desktop/renpy-8.1.3-sdk/renpy/ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "/Users/andrewwu/Desktop/renpy-8.1.3-sdk/renpy/python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 45, in <module>
+    generate_world()
+  File "game/script.rpy", line 20, in generate_world
+    world = World()
+  File "world.py", line 18, in __init__
+  File "world.py", line 22, in add_areas
+  File "factory.py", line 13, in generate_feature
+TypeError: __init__() takes 1 positional argument but 2 were given
+
+macOS-12.1-arm64-arm-64bit arm64
+Ren'Py 8.1.3.23091805
+Nightwalk Simulator 1.0
+Sat Nov  4 17:21:26 2023
